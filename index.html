@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>College Helper</title>
+<link rel="icon" type="image/png" href="images/demo/ch.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <nav id="mainav"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="index.html"><font size="3" face="Roboto" color="black">Home</font></a></li>
+      <li class="active"><a class="drop" href="#"><font size="3" face="Roboto" color="black">Videos</font></a>
+        <ul>
+          <li><a href="pages/gallery.html">Movies</a></li>
+          <li><a href="pages/full-width.html">Stand-Ups</a></li>
+          <li><a href="pages/sidebar-left.html">College Events</a></li>
+          <li><a href="pages/sidebar-right.html">Songs</a></li>
+          <li><a href="pages/basic-grid.html">T.V. Series</a></li>
+          <li><a href="pages/basic-grid.html">Others</a></li>
+        </ul>
+      </li>
+      <li class="active"><a class="drop" href="#"><font size="3" face="Roboto" color="black">Games</font></a>
+        <ul>
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Adventure</a> </li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Stratergy</a></li>
+          <li><a href="#">Simulation</a></li>
+        </ul>
+       <li class="active"><a class="drop" href="#"><font size="3" face="Roboto" color="black">Pictures</font></a>
+        <ul>
+          <li><a href="#">Hostel</a></li>
+          <li><a href="#">Campus</a> </li>
+          <li><a href="#">Effervescence</a></li>
+          <li><a href="#">Aparoksha</a></li>
+          <li><a href="#">Asmita</a></li>
+        </ul> 
+      </li>
+      <li class="active"><a href="#"><font size="3" face="Roboto" color="black">Books</font></a></li>
+      <li class="active"><a href="#"><font size="3" face="Roboto" color="black">Stationary</font></a></li>
+      <li class="active"><a href="#"><font size="3" face="Roboto" color="black">Others</font></a></li>
+      <li class="active"><font size="3" face="Roboto" color="black"></font></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/01.jpg');">
+  <div id="pageintro"> 
+    <center style="margin-top: -10%;"><img src="images/demo/ch.png" style="width: 150px;"></center>
+    <article>
+      <h1 class="heading">COLLEGE HELPER</h1>
+      <p>One Stop Shop for all college Ameneties</p>
+      <footer>
+        <ul class="nospace inline pushright">
+              <button type="button" class="btn inverse" data-toggle="modal" data-target="#Login">
+                Log In
+              </button>
+              <button type="button" class="btn inverse" data-toggle="modal" data-target="#SignUp">
+                Sign Up
+              </button>
+        </ul>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="SignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="http://localhost:3000/signup">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter Name">
+            </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" name="username" placeholder="Enter Username">
+            </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email Id</label>
+            <input type="text" class="form-control" name="email" placeholder="Enter Email Id">
+            </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="pass" placeholder="Enter Password">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+            </label>
+          </div>
+          <center><button type="submit" class="btn btn-primary">Submit</button></center>
+        </form>      
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="http://localhost:3000/login">
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name = "username" placeholder="Enter username">
+<!--            <small id="uname" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="pass" placeholder="Password">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+            </label>
+          </div>
+        <center><button type="submit" class="btn btn-primary">Submit</button></center>
+        </form>      
+      </div>
+    </div>
+  </div>
+</div>  
+<section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Developers</h6>
+    </div>
+    <center>
+    <div class="group team">
+      <figure><a class="imgover" href="#"><center><img src="images/demo/Rishi Shukla.jpg" alt="" width="100"></center></a>
+        <figcaption>
+          <h6 class="heading">Rishi Shukla</h6>
+          <em>IIT2016507</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <br>
+      <figure><a class="imgover" href="#"><center><img src="images/demo/Saksham Singh.jpg" alt=""></center></a>
+        <figcaption>
+          <h6 class="heading">Saksham Singh</h6>
+          <em>IIT2016090</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <br>
+      <figure><a class="imgover" href="#"><center><img src="images/demo/Aashutosh Khandelwal.jpg" alt=""></center></a>
+        <figcaption>
+          <h6 class="heading">Aashutosh Khandelwal</h6>
+          <em>IIT2016514</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <br>
+      <figure><a class="imgover" href="#"><center><img src="images/demo/Harsh Jain.jpg" alt="" "></center></a>
+        <figcaption>
+          <h3 class="heading">Harsh Jain</h6>
+          <em>IIT2016079</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <br>
+      <figure><a class="imgover" href="#"><center><img src="images/demo/Yash Raj.jpg" alt=""></center></a>
+        <figcaption>
+          <h6 class="heading">Yash Raj</h6>
+          <em>IEC2017062</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure></center>
+    </div>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_half first">
+    <center>  <h6 class="heading">IIIT Allahabad</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          IIIT Rd, Near Boys Hostel, Devghat, Jhalwa, Allahabad, Uttar Pradesh 211015
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +91 7234047435</li>
+        <li><i class="fa fa-envelope-o"></i> iit2016507@iiita.ac.in</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li></center>
+      </ul>
+    </div>
+     <div class="one_half">
+    <center> <h5>Send us your Thoughts</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <input class="btmspace-15" type="text" value="" placeholder="Message">
+          <button type="submit" value="submit">Submit</button></center>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <center><p>Copyright &copy; 2017 - All Rights Reserved - <a href="#">College Helper</a></p></center>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
